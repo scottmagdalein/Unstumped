@@ -1,38 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-require 'stripe'
 
-set :publishable_key, ENV['PUBLISHABLE_KEY']
-set :secret_key, ENV['SECRET_KEY']
-
-Stripe.api_key = settings.secret_key
 
 get '/' do
   haml :index
-end
-
-post '/charge' do
-	# Amount in cents
-  @amount = 24000
-
-  customer = Stripe::Customer.create(
-    :email => 'customer@example.com',
-    :card  => params[:stripeToken]
-  )
-
-  charge = Stripe::Charge.create(
-    :amount      => @amount,
-    :description => 'Unstumped Charge',
-    :currency    => 'usd',
-    :customer    => customer.id
-  )
-
-  haml :charge
-end
-
-error Stripe::CardError do
-  env['sinatra.error'].message
 end
 
 post '/form' do
@@ -58,6 +30,14 @@ post '/form' do
 	}
 end
 
-
-
-
+__END__
+@@layout
+!!!
+%html
+%head
+	%title Unstumped - Get 1-on-1 help with HTML, CSS, JavaScript, and Ruby
+	%link{ :href => "/stylesheets/style.css", :type => "text/css", :rel => "stylesheet" }
+	%link{ :href => "/stylesheets/modal.css", :type => "text/css", :rel => "stylesheet" }
+	%link{ :href => "http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,900", :rel => "stylesheet", :type => "text/css" }
+%body
+	= yield
