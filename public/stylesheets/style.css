@@ -14,6 +14,10 @@ body {
 	clear: both;
 	padding: 50px;
 }
+.clearsmall {
+	clear: both;
+	padding: 10px;
+}
 
 #container {
 	width: 960px;
@@ -24,7 +28,7 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 90px;
 	font-weight: 800;
-	padding: 20px;
+	padding-top: 20px;
 	text-align: center;
 	text-shadow: 0 0 1px #21331A;
 }
@@ -40,6 +44,15 @@ h3 {
 	font-weight: 400;
 	text-align: center;
 }
+h4 {
+	font-family: 'Merriweather', serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: .1em;
+	word-spacing: .5em;
+	padding-bottom: 20px;
+}
 p {
 	font-family: 'Merriweather', serif;
 	font-size: 16px;
@@ -54,10 +67,9 @@ a, a:hover {
 	color: #3D8C72;
 	text-decoration: none;
 }
-
 .calltoaction .btn {
 	display: block;
-  width: 400px;
+  width: 320px;
   font-family: 'Open Sans', serif;
   font-size: 28px;
   color: #fff;
@@ -65,7 +77,7 @@ a, a:hover {
   border-radius: 5px;
   box-shadow: 0px 5px 0px #3D8C72;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   margin: 50px auto 0;
   font-weight: bold;
@@ -108,97 +120,65 @@ a, a:hover {
 	5% {-webkit-transform: rotate(0deg);}
 	100% {-webkit-transform: rotate(0deg);}
 }
-
 .calltoaction h3 {
 	text-align: center;
 	padding-top: 50px;
 }
 
-#howitworks {
-	padding-top: 30px;
-}
 
-#howitworks p {
+#howitworks .box {
+	display: block;
 	float: left;
 	width: 300px;
-	padding: 20px 10px;
-}
-
-.pricing_grid {
-	width: 600px;
-	margin: 20px auto;
-	margin-bottom: 40px;
-	padding: 20px;
+	height: 210px;
+	margin: 10px;
 	background-color: #21331A;
-	box-shadow: 0px 1px 2px #405383;
 	border-radius: 5px;
-}
-.pricing_grid h3 {
-	font-family: 'Merriweather', serif;
-	font-weight: 700;
-	text-align: left !important;
-	margin: 10px 0 0 10px;
+	box-shadow: 0 5px 0 #69A551;
 	color: #fff;
 }
-.pricing_grid p {
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	padding-left: 20px;
-	padding-bottom: 10px;
+#howitworks h3 {
+	font-weight: bold;
+	text-align: left;
+	line-height: 35px;
+	margin: 20px;
 }
-.pricing_grid .top {
-	text-align: center;
-	padding-top: 20px;
-}
-.pricing_grid table td .left {
-	width: 400px;
-}
-.pricing_grid table td .right {
-	width: 200px;
+#howitworks p {
+	font-size: 110%;
+	margin: 20px;
 }
 
-#whofor {
-	width: 100%;
-}
-#whofor h3 {
-	padding-bottom: 20px;
-}
-.whofor_item {
+#learn .box {
+	display: block;
 	float: left;
-	width: 300px;
-	padding: 20px 10px;
+	width: 458px;
+	height: 680px;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #69A551;
+	box-shadow: 0px 5px 0 #69A551;
+	color: #21331A;
 }
-.whofor_item p {
-	padding-bottom: 10px;
+#learn h3 {
+	font-weight: bold;
+	text-align: left;
+	line-height: 35px;
+	margin: 20px;
 }
-.cover {
-	opacity: .25;
-}
-.cover:hover {
-	opacity: 1;
-}
-
-#questions {
-	width: 100%;
-}
-.question {
-	float: left;
-	width: 300px;
-	padding: 20px 10px;
-}
-.question p {
-	padding-bottom: 10px;
+#learn p {
+	font-size: 110%;
+	margin: 20px;
 }
 
 #footer {
 	text-align: center;
-	padding-bottom: 20px;
 }
-
-.stripe_modal {}
-
-
+#footer a {
+	margin: 20px;
+	text-decoration: underline;
+	padding: 20px 0;
+}
 
 
 

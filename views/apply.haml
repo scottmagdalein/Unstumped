@@ -1,0 +1,14 @@
+%form{:action => "/apply", :method => "post"}
+	%label{:for => "name"} Name
+	%input{:name => "name", :type => "text"}
+	%label{:for => "email"} Email
+	%input{:name => "email", :type => "text"}
+	%label{:for => "phone"} Phone
+	%input{:name => "phone", :type => "text"}
+	%label{:for => "why"} What do you hope to accomplish through Unstumped?
+	%input{:name => "why", :type => "textarea"}
+	%label{:for => "experience"} Tell us about your experience and skills with technology.
+	%input{:name => "experience", :type => "textarea"}
+	%label{:for => "links"} Where can we find you online? (Twitter, Facebook, LinedIn, etc.)
+	%input{:name => "links", :type => "textarea"}
+	%input{:type => "button", :value => "Send application"}
