@@ -19,7 +19,7 @@ body {
 	padding: 10px;
 }
 
-#container {
+#container, #howitworks, #learn, #faq, #pricing, #apply {
 	width: 960px;
 	margin: 0 auto;
 }
@@ -66,6 +66,10 @@ p {
 a, a:hover {
 	color: #3D8C72;
 	text-decoration: none;
+}
+.calltoaction {
+	width: 820px;
+	margin: 0 auto;
 }
 .calltoaction .btn {
 	display: block;
@@ -126,6 +130,11 @@ a, a:hover {
 }
 
 
+#howitworks-container {
+	width: 100%;
+	background-color: #E6F4E7;
+	border-top: 5px dashed #A8BDB5;
+}
 #howitworks .box {
 	display: block;
 	float: left;
@@ -148,16 +157,35 @@ a, a:hover {
 	margin: 20px;
 }
 
+#learn-container {
+	width: 100%;
+	background-color: #69A551;
+	border-top: 5px dashed #21331A;
+}
+#learn h2 {
+	color: #fff;
+}
 #learn .box {
 	display: block;
 	float: left;
 	width: 458px;
-	height: 680px;
 	margin: 10px;
-	background-color: #fff;
+	background-color: #E6F4E7;
 	border-radius: 5px;
-	border: 1px solid #69A551;
-	box-shadow: 0px 5px 0 #69A551;
+	/*border: 1px solid #69A551;*/
+	box-shadow: 0 5px 0 #21331A;
+	color: #21331A;
+}
+#learn .box-right {
+	display: block;
+	float: right;
+	width: 458px;
+	padding: 10px 0;
+	margin: 10px;
+	background-color: #E6F4E7;
+	border-radius: 5px;
+	/*border: 1px solid #69A551;*/
+	box-shadow: 0 5px 0 #21331A;
 	color: #21331A;
 }
 #learn h3 {
@@ -169,6 +197,92 @@ a, a:hover {
 #learn p {
 	font-size: 110%;
 	margin: 20px;
+}
+
+#faq-container {
+	width: 100%;
+	background-color: #E6F4E7;
+	border-top: 5px dashed #A8BDB5;
+}
+#faq h3 {
+	font-weight: bold;
+	text-align: left;
+	line-height: 35px;
+	margin: 20px;
+}
+#faq p {
+	font-size: 110%;
+	margin: 20px;
+}
+
+#pricing-container {
+	width: 100%;
+	background-color: #69A551;
+	border-top: 5px dashed #21331A;
+}
+#pricing .box {
+	display: block;
+	width: 550px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #E6F4E7;
+	border-radius: 5px;
+	box-shadow: 0 5px 0 #21331A;
+	color: #21331A;
+}
+#pricing h2 {
+	color: #fff;
+}
+#pricing p {
+	text-align: center;
+}
+
+table {
+	background-color: #E6F4E7;
+	border-radius: 5px;
+	box-shadow: 0 5px 0 #21331A;
+	color: #21331A;
+	margin: 0 auto;
+}
+td h3 {
+	text-align: left;
+	margin: 10px 30px;
+}
+th {
+	padding: 10px;
+	border-bottom: 1px dashed #21331A;
+}
+
+#apply-container {
+	width: 100%;
+	background-color: #E6F4E7;
+	border-top: 5px dashed #3D8C72;
+}
+#apply h2 {
+	color: #fff;
+}
+#apply .box {
+	display: block;
+	float: left;
+	width: 458px;
+	margin: 10px;
+	background-color: #E6F4E7;
+	border-radius: 5px;
+	/*border: 1px solid #69A551;*/
+	box-shadow: 0 5px 0 #21331A;
+	color: #21331A;
+}
+#apply .box-right {
+	display: block;
+	float: right;
+	width: 458px;
+	padding: 10px 0;
+	margin: 10px;
+	background-color: #E6F4E7;
+	border-radius: 5px;
+	/*border: 1px solid #69A551;*/
+	box-shadow: 0 5px 0 #21331A;
+	color: #21331A;
 }
 
 #footer {

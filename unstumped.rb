@@ -57,5 +57,6 @@ __END__
 	%link{ :href => "/stylesheets/style.css", :type => "text/css", :rel => "stylesheet" }
 	%link{ :href => "/stylesheets/modal.css", :type => "text/css", :rel => "stylesheet" }
 	%link{ :href => "http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,900", :rel => "stylesheet", :type => "text/css" }
+	%link{ :href => "/fonts/ss-symbolicons-block.css", :rel => "stylesheet", :type => "text/css" }
 %body
 	= yield

@@ -1,15 +1,18 @@
 #container
 	%h1 Be a Web Developer
-	%h2 An online, mentor-based programming course
+	.clearsmall
+	%h2
+		Get 
+		%span.strong 1-on-1 training
+		and 
+		%br become a web developer.
 	.calltoaction
-		%a{ :href => "", :class => "btn" } Apply to be a mentee
+		%a{ :href => "", :class => "btn" } Apply to the program
 		%h3
-			Get
-			%span.strong personal, 1-on-1 training
-			%br
-			from an experienced web developer.
+			Learn UX design, advanced HTML & CSS, and database-driven web development with Ruby on Rails.
 		.clear
-
+#howitworks-container	
+	.clear
 	#howitworks
 		%h2 How it works
 		.clearsmall
@@ -31,30 +34,13 @@
 		.box
 			%h3 Our goal is your independence
 			%p Strike our on your own as soon as you feel confident.
-		.clear
-
+	.clear
+#learn-container
+	.clear
 	#learn
 		%h2 What you'll learn
 		.clearsmall
-		.box
-			%h3 User Experience Design
-			%p
-				%span.strong Best Practices -
-				User stories, storycarding, user personas, information architecture, user application flows, and site maps
-			%p
-				%span.strong Wireframing -
-				Content structuring, attention dynamics, sketching, prototyping, interaction planning and design, and Sharpies
-			%h3 Web Design
-			%p
-				%span.strong HTML & CSS Foundations -
-				Display content, style it, add images and videos and audio, build forms, and turn Photoshop designs into working websites
-			%p
-				%span.strong Advanced HTML & CSS -
-				Responsive layouts, CSS animations and transitions, web fonts, icon fonts, designing in code, compilers like HAML, SASS, and SCSS
-			%p
-				%span.strong JavaScript Foundations -
-				Programming with JavaScript, traversing the DOM, AJAX, jQuery plugins, and writing jQuery from scratch
-		.box
+		.box-right
 			%h3 Web Development
 			%p
 				%span.strong Ruby -
@@ -71,7 +57,119 @@
 			%p
 				%span.strong Deploying to Heroku -
 				Package your app, spin up a dyno, and publish your app to the world
+		.box	
+			%h3 Web Design
+			%p
+				%span.strong HTML & CSS Foundations -
+				Display content, style it, add images and videos and audio, and build web forms
+			%p
+				%span.strong Advanced HTML & CSS -
+				Responsive layouts, CSS animations and transitions, web fonts, icon fonts, designing in code, compilers like HAML, SASS, and SCSS
+			%p
+				%span.strong JavaScript Foundations -
+				Programming with JavaScript, traversing the DOM, AJAX, jQuery plugins, and writing jQuery from scratch
+		.box
+			%h3 User Experience Design
+			%p
+				%span.strong Best Practices -
+				User stories, storycarding, user personas, information architecture, user application flows, and site maps
+			%p
+				%span.strong Wireframing -
+				Content structuring, attention dynamics, sketching, prototyping, interaction planning and design, and Sharpies
 		.clear
-	#footer
-		%a{ :href => "mailto:scottmagdalein@gmail.com" } Ask us a question
-		%a{:href => "https://docs.google.com/forms/d/1sGsgoeJ46nzaCZ7hO2zlR_7_Jr4as3l-XHF9Glid8uk/viewform"} Become a mentor
+#faq-container
+	.clear
+	#faq
+		%h2 Questions people ask
+		.clearsmall
+		%h3 How long does the program last?
+		%p Aim for 6 months, but you can complete the course as quickly or slowly as you like. There is no beginning date or end date. Stay with us as long as you feel like you need help and then branch out on your own as soon as you feel confident in your abilities.
+		%h3 What will I be able to build when I'm done?
+		%p If you complete the entire course plan, you'll be able to design, build and develop web applications with Ruby on Rails.
+		%h3 What if can't complete the entire course plan?
+		%p You can pause the program at any time if you need to take a break, and then pick up where you left off any time in the future. (This is a key differentiator from other developer bootcamp offerings.)
+		%h3 Who should apply?
+		%p This program is perfect for people who are serious about becoming a web developer, but don't have the ability to attend college or an in-person intensive course in another city.
+		%h3 What is the time requirement for students?
+		%p There is no time requirement. However, to glean the most value from the program, we encourage students to commit at least one hour every day to completing course materials, projects, and challenges.
+		%h3 Do you accept overseas students?
+		%p Yes, we love overseas students. (This is a key differentiator from other developer bootcamp offerings.)
+		%h3 Will I need to buy special hardware or software?
+		%p You'll need a modern computer running a current version of Mac OSX or Windows. You'll be working with Open Source software, which is free.
+	.clear
+#pricing-container
+	.clear
+	#pricing
+		%h2 Cost comparison
+		.clearsmall
+		%table.table
+			%tr
+				%th{:colspan => "2"}
+					%h3.strong $495/month
+					%p Pay monthly. Cancel anytime. Try us for 7 days, risk-free.
+			%tr
+				%td
+					%h3 6 months with us
+				%td
+					%h3.strong $3,000
+			%tr
+				%td
+					%h3 Dev Bootcamp
+				%td
+					%h3.strong $12,200
+			%tr
+				%td
+					%h3 Starter League
+				%td
+					%h3.strong $12,000
+			%tr
+				%td
+					%h3 App Academy
+				%td
+					%h3.strong $12,450
+			%tr
+				%td
+					%h3 Hack Reactor
+				%td
+					%h3.strong $17,780
+		.clear
+
+#apply-container
+	.clear
+	#apply
+		%h2 Apply to the program
+		.clearsmall
+		.box-right
+			%h3 
+		.box
+			%form{:action => "/apply", :method => "post"}
+				%label{:for => "name"} Name
+				%br
+				%input{:name => "name", :type => "text"}
+				%br
+				%label{:for => "email"} Email
+				%br
+				%input{:name => "email", :type => "text"}
+				%br
+				%label{:for => "phone"} Phone
+				%br
+				%input{:name => "phone", :type => "text"}
+				%br
+				%label{:for => "why"} What do you hope to accomplish through Unstumped?
+				%br
+				%input{:name => "why", :type => "textarea"}
+				%br
+				%label{:for => "experience"} Tell us about your experience and skills with technology.
+				%br
+				%input{:name => "experience", :type => "textarea"}
+				%br
+				%label{:for => "links"} Where can we find you online? (Twitter, Facebook, LinedIn, etc.)
+				%br
+				%input{:name => "links", :type => "textarea"}
+				%br
+				%input{:type => "button", :value => "Send application"}
+
+
+#footer
+	%a{ :href => "mailto:scottmagdalein@gmail.com" } Ask us a question
+	%a{:href => "https://docs.google.com/forms/d/1sGsgoeJ46nzaCZ7hO2zlR_7_Jr4as3l-XHF9Glid8uk/viewform"} Become a mentor
