@@ -24,14 +24,12 @@ end
 
 
 post '/apply' do
-	@name = params[name]
-	@email = params[email]
-	@phone = params[phone]
-	@what = params[what]
-	@experience = params[experience]
-	@links = params[links]
-
-	haml :applicant
+	@name = params["name"]
+	@email = params["email"]
+	@phone = params["phone"]
+	@what = params["what"]
+	@experience = params["experience"]
+	@links = params["links"]
 
 	options = {
 		:to => "scottmagdalein@gmail.com",
