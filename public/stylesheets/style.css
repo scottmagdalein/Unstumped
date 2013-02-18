@@ -12,7 +12,7 @@ body {
 }
 .clear {
 	clear: both;
-	padding: 50px;
+	padding: 30px;
 }
 .clearsmall {
 	clear: both;
@@ -73,7 +73,7 @@ a, a:hover {
 }
 .calltoaction .btn {
 	display: block;
-  width: 320px;
+  width: 400px;
   font-family: 'Open Sans', serif;
   font-size: 28px;
   color: #fff;
@@ -243,33 +243,28 @@ table {
 	box-shadow: 0 5px 0 #21331A;
 	color: #21331A;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 td h3 {
 	text-align: left;
 	margin: 10px 30px;
 }
 th {
-	padding: 10px;
-	border-bottom: 1px dashed #21331A;
+	padding: 20px;
 }
 
 #apply-container {
 	width: 100%;
-	background-color: #E6F4E7;
 	border-top: 5px dashed #3D8C72;
 }
 #apply h2 {
-	color: #fff;
+	color: #21331A;
 }
 #apply .box {
 	display: block;
 	float: left;
-	width: 458px;
+	width: 460px;
 	margin: 10px;
-	background-color: #E6F4E7;
-	border-radius: 5px;
-	/*border: 1px solid #69A551;*/
-	box-shadow: 0 5px 0 #21331A;
 	color: #21331A;
 }
 #apply .box-right {
@@ -278,11 +273,81 @@ th {
 	width: 458px;
 	padding: 10px 0;
 	margin: 10px;
-	background-color: #E6F4E7;
-	border-radius: 5px;
-	/*border: 1px solid #69A551;*/
-	box-shadow: 0 5px 0 #21331A;
 	color: #21331A;
+}
+form label {
+	padding: 10px 0;
+}
+form input[type=text] {
+	width: 440px;
+	height: 25px;
+	padding: 5px;
+	margin: 5px 0 15px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+form textarea {
+	width: 440px;
+	padding: 5px;
+	margin: 5px 0 15px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	resize: none;
+}
+* :focus {
+	outline: none;
+}
+.button {
+	display: block;
+  width: 320px;
+  font-family: 'Open Sans', serif;
+  font-size: 28px;
+  color: #fff;
+  background-color: #69A551;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #3D8C72;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  margin: 20px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.button:hover {
+	opacity: .9;
+	transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+#nav {
+	text-align: center;
+	padding-top: 20px;
+}
+#nav a {
+	margin: 15px;
+}
+#apply h3 {
+	text-align: left;
+	font-weight: bold;
+	padding-left: 20px;
+}
+ol {
+	margin-left: 20px;
+	padding-left: 20px;
+}
+ol li {
+	padding: 5px 0;
 }
 
 #footer {

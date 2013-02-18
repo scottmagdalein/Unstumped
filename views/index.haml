@@ -1,13 +1,15 @@
 #container
-	%h1 Be a Web Developer
+	%h1 New Method
 	.clearsmall
 	%h2
-		Get 
-		%span.strong 1-on-1 training
-		and 
-		%br become a web developer.
+		Become a web developer
+	#nav
+		%a{:href => "#howitworks-container"} How it works
+		%a{:href => "#learn-container"} What you'll learn
+		%a{:href => "#faq-container"} Questions people ask
+		%a{:href => "#pricing-container"} How much it costs
 	.calltoaction
-		%a{ :href => "", :class => "btn" } Apply to the program
+		%a{ :href => "#apply-container", :class => "btn" } Try it for 7 days, risk-free.
 		%h3
 			Learn UX design, advanced HTML & CSS, and database-driven web development with Ruby on Rails.
 		.clear
@@ -85,17 +87,17 @@
 		%h3 How long does the program last?
 		%p Aim for 6 months, but you can complete the course as quickly or slowly as you like. There is no beginning date or end date. Stay with us as long as you feel like you need help and then branch out on your own as soon as you feel confident in your abilities.
 		%h3 What will I be able to build when I'm done?
-		%p If you complete the entire course plan, you'll be able to design, build and develop web applications with Ruby on Rails.
+		%p If you complete the entire course plan, you'll be able to design, build and deploy web applications with Ruby on Rails.
 		%h3 What if can't complete the entire course plan?
 		%p You can pause the program at any time if you need to take a break, and then pick up where you left off any time in the future. (This is a key differentiator from other developer bootcamp offerings.)
 		%h3 Who should apply?
 		%p This program is perfect for people who are serious about becoming a web developer, but don't have the ability to attend college or an in-person intensive course in another city.
 		%h3 What is the time requirement for students?
-		%p There is no time requirement. However, to glean the most value from the program, we encourage students to commit at least one hour every day to completing course materials, projects, and challenges.
+		%p There is no time requirement. However, to glean the most value from the program, we encourage students to commit at least one hour every day to completing course materials, projects, and challenges. You'll be surprised at what you can accomplish with one hour of focused time each day.
 		%h3 Do you accept overseas students?
 		%p Yes, we love overseas students. (This is a key differentiator from other developer bootcamp offerings.)
 		%h3 Will I need to buy special hardware or software?
-		%p You'll need a modern computer running a current version of Mac OSX or Windows. You'll be working with Open Source software, which is free.
+		%p You'll need a modern computer running a current version of Mac OSX or Windows. Other than that, you'll be working with Open Source software, which is free.
 	.clear
 #pricing-container
 	.clear
@@ -107,11 +109,6 @@
 				%th{:colspan => "2"}
 					%h3.strong $495/month
 					%p Pay monthly. Cancel anytime. Try us for 7 days, risk-free.
-			%tr
-				%td
-					%h3 6 months with us
-				%td
-					%h3.strong $3,000
 			%tr
 				%td
 					%h3 Dev Bootcamp
@@ -132,15 +129,26 @@
 					%h3 Hack Reactor
 				%td
 					%h3.strong $17,780
+			%tr
+				%td
+					%h3 New Method (6 months)
+				%td
+					%h3.strong $3,000
 		.clear
 
 #apply-container
 	.clear
 	#apply
-		%h2 Apply to the program
+		%h2 Student application
 		.clearsmall
 		.box-right
-			%h3 
+			%h3 What happens next:
+			%ol
+				%li Submit your application.
+				%li We'll call you for a brief, informal interview. This will also give you the chance to find out more about how New Method works and ask any other questions you might have.
+				%li If we both agree that you're a fit, we'll send you a payment link to start your membership.
+				%li Once your payment is processed, we'll connect you with your mentor and send you the New Method learning plan and a "Getting Started" guide.
+				%li We'll stay in close contact during your first week to make sure you get started on the right foot.
 		.box
 			%form{:action => "/apply", :method => "post"}
 				%label{:for => "name"} Name
@@ -155,21 +163,26 @@
 				%br
 				%input{:name => "phone", :type => "text"}
 				%br
-				%label{:for => "why"} What do you hope to accomplish through Unstumped?
+				%label{:for => "what"} What do you hope to accomplish through New Method?
 				%br
-				%input{:name => "why", :type => "textarea"}
+				%textarea{:name => "what", :rows => "3"}
 				%br
 				%label{:for => "experience"} Tell us about your experience and skills with technology.
 				%br
-				%input{:name => "experience", :type => "textarea"}
+				%textarea{:name => "experience", :rows => "3"}
 				%br
-				%label{:for => "links"} Where can we find you online? (Twitter, Facebook, LinedIn, etc.)
+				%label{:for => "links"} Where can we find you online?
 				%br
-				%input{:name => "links", :type => "textarea"}
+				%textarea{:name => "links", :placeholder => "Twitter, Facebook, LinkedIn, Dribbble, blog, etc.", :rows => "3"}
 				%br
-				%input{:type => "button", :value => "Send application"}
+				%input{:type => "button", :value => "Submit application", :class => "button"}
 
-
+		.clear
 #footer
 	%a{ :href => "mailto:scottmagdalein@gmail.com" } Ask us a question
 	%a{:href => "https://docs.google.com/forms/d/1sGsgoeJ46nzaCZ7hO2zlR_7_Jr4as3l-XHF9Glid8uk/viewform"} Become a mentor
+:javascript
+	$('a').click(function(e){
+		$('html,body').scrollTo(this.hash, this.hash);
+		e.preventDefault();
+	});
