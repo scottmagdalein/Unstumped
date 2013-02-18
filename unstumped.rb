@@ -36,7 +36,7 @@ post '/apply' do
 	options = {
 		:to => "scottmagdalein@gmail.com",
 		:from => "no-reply@herokuapp.com",
-		:reply_to => "#{@email}"
+		:reply_to => "#{@email}",
 		:subject => "New applicant: #{@name}",
 		:html_body => haml(:applicant),
 		:via => :smtp,
