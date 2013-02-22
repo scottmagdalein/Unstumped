@@ -103,13 +103,18 @@
 #pricing-container
 	.clear
 	#pricing
-		%h2 Cost comparison
+		%h2 How much it costs
 		.clearsmall
 		%table.table
 			%tr
 				%th{:colspan => "2"}
 					%h3.strong $495/month
-					%p Pay monthly. Cancel anytime. Try us for 7 days, risk-free.
+					%p
+						Pay monthly. Cancel anytime.
+						%a{:href => "#apply-container"} Try it for 7 days, risk-free.
+			%tr
+				%th{:colspan => "2"}
+					%p.strong Compare our price with our competitors
 			%tr
 				%td
 					%h3 Dev Bootcamp
@@ -130,20 +135,16 @@
 					%h3 Hack Reactor
 				%td
 					%h3.strong $17,780
-			%tr
-				%td
-					%h3 New Method (6 months)
-				%td
-					%h3.strong $3,000
 		.clear
 
 #apply-container
 	.clear
 	#apply
-		%h2 Student application
+		%h2 Try it for 7 days, risk free
 		.clearsmall
 		.box-right
 			%h3 What happens next:
+			.clearsmall
 			%ol
 				%li Submit your application.
 				%li We'll call you for a brief, informal interview. This will also give you the chance to find out more about how New Method works and ask any other questions you might have.
