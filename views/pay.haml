@@ -1,17 +1,16 @@
-<form action="https://authorize.payments.amazon.com/pba/paypipeline" method="post">
-  <input type="hidden" name="returnUrl" value="http://unstumped.com/hooray" >
-  <input type="hidden" name="processImmediate" value="0" >
-  <input type="hidden" name="accessKey" value="11SEM03K88SD016FS1G2" >
-  <input type="hidden" name="signatureMethod" value="HmacSHA256" >
-  <input type="hidden" name="collectShippingAddress" value="0" >
-  <input type="hidden" name="amazonPaymentsAccountId" value="DCBQHCQTLQBV6THBBBD59A31SNUMAGSQNU2SL7" >
-  <input type="hidden" name="cobrandingStyle" value="logo" >
-  <input type="hidden" name="immediateReturn" value="1" >
-  <input type="hidden" name="amount" value="USD 500" >
-  <input type="hidden" name="recurringFrequency" value="1 month" >
-  <input type="hidden" name="description" value="Monthly membership to Unstumped School of Code" >
-  <input type="hidden" name="abandonUrl" value="http://unstumped.com/sadface" >
-  <input type="hidden" name="signatureVersion" value="2" >
-  <input type="hidden" name="signature" value="JAX+RNO1wIzfbjfAMCJIqlkiiyzq8TGdH5AG4CWKnRI=" >
-  <input type="image" src="http://g-ecx.images-amazon.com/images/G/01/asp/beige_small_paynow_withmsg_whitebg.gif" border="0">
-</form>
+%form{:action => "https://authorize.payments.amazon.com/pba/paypipeline", :method => "post"}
+  %input{:name => "returnUrl", :type => "hidden", :value => "http://newmethod.co/hooray"}/
+  %input{:name => "processImmediate", :type => "hidden", :value => "0"}/
+  %input{:name => "accessKey", :type => "hidden", :value => "11SEM03K88SD016FS1G2"}/
+  %input{:name => "signatureMethod", :type => "hidden", :value => "HmacSHA256"}/
+  %input{:name => "collectShippingAddress", :type => "hidden", :value => "0"}/
+  %input{:name => "amazonPaymentsAccountId", :type => "hidden", :value => "DCBQHCQTLQBV6THBBBD59A31SNUMAGSQNU2SL7"}/
+  %input{:name => "cobrandingStyle", :type => "hidden", :value => "logo"}/
+  %input{:name => "immediateReturn", :type => "hidden", :value => "1"}/
+  %input{:name => "amount", :type => "hidden", :value => "USD 500"}/
+  %input{:name => "recurringFrequency", :type => "hidden", :value => "1 month"}/
+  %input{:name => "description", :type => "hidden", :value => "Monthly membership to New Method"}/
+  %input{:name => "abandonUrl", :type => "hidden", :value => "http://newmethod.co/sadface"}/
+  %input{:name => "signatureVersion", :type => "hidden", :value => "2"}/
+  %input{:name => "signature", :type => "hidden", :value => "mY75ZSVUQ1p9Lhww5wf0Tm5ZVS7PStDWZuj3tMJHUB4="}/
+  %input{:border => "0", :class => "btn", :type => "image"}/

@@ -1,1 +1,1 @@
-web: bundle exec ruby unstumped.rb -p $PORT
+web: bundle exec ruby newmethod.rb -p $PORT

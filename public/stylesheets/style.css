@@ -4,11 +4,12 @@
 }
 
 html {
-	font-family: 'Merriweather', serif;
+	font-family: Georgia, serif;
 	color: #21331A;
 }
 body {
 	width: 100%;
+	font-size: 18px;
 }
 .clear {
 	clear: both;
@@ -25,7 +26,7 @@ body {
 }
 
 h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 90px;
 	font-weight: 800;
 	padding-top: 20px;
@@ -37,19 +38,19 @@ h1 a {
 	color: #21331A;
 }
 h2 {
-	font-family: 'Merriweather', serif;
+	font-family: Georgia, serif;
 	font-size: 50px;
 	font-weight: 400;
 	text-align: center;
 }
 h3 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 30px;
 	font-weight: 400;
 	text-align: center;
 }
 h4 {
-	font-family: 'Merriweather', serif;
+	font-family: Georgia, serif;
 	font-size: 30px;
 	font-weight: 700;
 	text-align: center;
@@ -58,8 +59,8 @@ h4 {
 	padding-bottom: 20px;
 }
 p {
-	font-family: 'Merriweather', serif;
-	font-size: 16px;
+	font-family: Georgia, serif;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5em;
 }
@@ -72,13 +73,13 @@ a, a:hover {
 	text-decoration: none;
 }
 .calltoaction {
-	width: 820px;
+	width: 840px;
 	margin: 0 auto;
 }
 .calltoaction .btn {
 	display: block;
-  width: 400px;
-  font-family: 'Open Sans', serif;
+  width: 440px;
+  font-family: Verdana, serif;
   font-size: 28px;
   color: #fff;
   background-color: #69A551;
@@ -143,7 +144,7 @@ a, a:hover {
 	display: block;
 	float: left;
 	width: 300px;
-	height: 210px;
+	height: 250px;
 	margin: 10px;
 	background-color: #21331A;
 	border-radius: 5px;
@@ -155,6 +156,7 @@ a, a:hover {
 	text-align: left;
 	line-height: 35px;
 	margin: 20px;
+	font-size: 26px;
 }
 #howitworks p {
 	font-size: 110%;
