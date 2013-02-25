@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'nesta/env'
-Nesta::Env.root = ::File.expand_path('.', ::File.dirname(__FILE__))
+Nesta::Env.root = ::File.expand_path('blog', ::File.dirname(__FILE__))
 require 'nesta/app'
 require './newmethod'
 
